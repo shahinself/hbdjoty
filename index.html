@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday JOTY</title>
+    <script src="./jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+   <h2>Happy Birthday JOTY</h2>
+   
+    <center>
+        <img src="images/CYMERA_20210422_232545.jpg" alt="">
+    </center>
+
+    <center>
+    <a id="click" onclick="wish()" class="animated-button1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Want More Wish!!
+      </a>
+    </center>
+    <div id="wish"></div>
+
+
+    <!-- <div>
+        <h3>
+            Happy Birthday 
+        </h3>
+        <h3 style="float: right;">
+            Happy Birthday 
+        </h3>
+    </div> -->
+
+
+    <script>
+
+        $("#click").click(function(){
+            var x;
+            var text = "";
+            for(x=0; x<=4200; x++){
+                text+= " <div style='color: white;'> <h3> Happy Birthday to you... </h3> <br> <h3 style='float: right;'> Happy Birthday to you... </h3> </div> <br> <br>";
+            }
+            document.getElementById("wish").innerHTML = text;
+        });
+        
+    </script>
+    
+</body>
+</html>
